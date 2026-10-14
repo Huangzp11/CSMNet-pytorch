@@ -218,3 +218,53 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# CSMNet project specifics (added on top of the Python template)
+# ============================================================
+# NOTE: the SRM filter kernels under kernels/ are *.npy and are
+# meant to be tracked -- do NOT add a global "*.npy" rule below.
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+ckpt/
+checkpoints*/
+weights/
+best_model_*.pth
+
+# Training logs / runs
+logs/
+runs/
+tb*/
+training.log
+training_log.csv
+
+# Datasets and generated stego images
+dataset*/
+dataset1*/
+BOSSBase*/
+BOWS2*/
+BOSSbase*/
+*_stego/
+*/SUNIWARD*/
+*/WOW*/
+*/MiPOD*/
+
+# Local credentials and browser-automation state -- NEVER publish
+*creds*
+*cookie*
+*_cookies.txt
+browser_data/
+ieee_browser_data/
+servers.md
+ftp_creds.txt
+
+# Editors / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
